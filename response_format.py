@@ -10,10 +10,11 @@ client.api_key = os.getenv("OPENAI_API_KEY")
 
 MODEL = "gpt-4o"
 messages = [
-    {"role": "system", "content": "You are a helpful assistant."},
-    {"role": "user", "content": "What is the purpose of life?"},
+    {"role": "user", "content": "List the hierarchy of human species in JSON format."},
 ]
 
-output = client.chat.completions.create(model=MODEL, messages=messages)
+output = client.chat.completions.create(
+    model=MODEL, messages=messages, response_format={"type": "json_object"}
+)
 
 print(output)
