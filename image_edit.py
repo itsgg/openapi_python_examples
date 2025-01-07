@@ -8,10 +8,11 @@ from openai import OpenAI
 client = OpenAI()
 client.api_key = os.getenv("OPENAI_API_KEY")
 
-response = client.images.edit(
-    image=open("output.png", "rb"),
-    mask=open("mask.png", "rb"),
-    prompt="A indian man is walking down the street.",
-)
+with open("output.png", "rb") as image_file, open("mask.png", "rb") as mask_file:
+    response = client.images.edit(
+        image=image_file,
+        mask=mask_file,
+        prompt="A indian man is walking down the street.",
+    )
 
 print(response.data[0].url)
