@@ -1,5 +1,19 @@
 """
-This is a simple example of how to use the OpenAI API wrapper.
+A simple OpenAI chat completion example using the OpenAI API.
+
+This script demonstrates how to:
+1. Initialize the OpenAI client
+2. Set up a basic chat conversation
+3. Handle API responses and errors
+
+Dependencies:
+    - openai: The official OpenAI Python client library
+    - Environment variable OPENAI_API_KEY must be set
+
+Example:
+    Set your OPENAI_API_KEY environment variable and run the script:
+    $ export OPENAI_API_KEY='your-api-key'
+    $ python chat.py
 """
 
 import os

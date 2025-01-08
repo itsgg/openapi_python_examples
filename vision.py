@@ -1,5 +1,23 @@
 """
-This is a simple example of how to use the OpenAI API wrapper.
+OpenAI Vision API Image Analysis
+
+This script demonstrates how to use OpenAI's GPT-4 Vision API to analyze and
+understand images. It can describe images, answer questions about them, and
+extract information from visual content.
+
+Dependencies:
+    - openai: The official OpenAI Python client library
+    - Environment variable OPENAI_API_KEY must be set
+
+Features:
+    - Analyze and describe images using GPT-4 Vision
+    - Support for both image URLs and local files
+    - Multiple analysis modes (description, detail extraction)
+    - Handle various image formats (PNG, JPEG, etc.)
+
+Example:
+    $ export OPENAI_API_KEY='your-api-key'
+    $ python vision.py
 """
 
 import os

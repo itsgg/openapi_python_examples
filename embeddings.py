@@ -1,5 +1,23 @@
 """
-This is a simple example of how to use the OpenAI API wrapper.
+OpenAI Text Embeddings Generator
+
+This script demonstrates how to generate vector embeddings from text using
+OpenAI's embedding models. These embeddings can be used for semantic search,
+text similarity, and other NLP tasks.
+
+Dependencies:
+    - openai: The official OpenAI Python client library
+    - Environment variable OPENAI_API_KEY must be set
+
+Features:
+    - Generate vector embeddings from text input
+    - Support for different embedding models
+    - Batch processing of multiple texts
+    - Optimized for semantic search applications
+
+Example:
+    $ export OPENAI_API_KEY='your-api-key'
+    $ python embeddings.py
 """
 
 import os
